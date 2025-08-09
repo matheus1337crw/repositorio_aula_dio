@@ -22,3 +22,18 @@ sudo useradd roberto
 sudo useradd josefina
 sudo useradd amanda
 sudo useradd rogerio
+
+chmod 777 /home/logan/publico
+chmod 770 /home/logan/adm
+chmod 770 /home/logan/ven
+chmod 770 /home/logan/sec
+
+usermod -a -G GRP_ADM joao
+usermod -a -G GRP_ADM maria
+usermod -a -G GRP_ADM carlos
+usermod -a -G GRP_VEN debora
+usermod -a -G GRP_VEN sebastiana
+usermod -a -G GRP_VEN roberto
+usermod -a -G GRP_SEC josefina
+usermod -a -G GRP_SEC amanda
+usermod -a -G GRP_SEC rogerio
