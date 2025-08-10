@@ -1,13 +1,13 @@
 #! bin/bash
 
-mkdir publico /home/logan
-mkdir adm /home/logan
-mkdir ven /home/logan
-mkdir sec /home/logan
+mkdir publico
+mkdir adm 
+mkdir ven 
+mkdir sec 
 
-chown :GRP_ADM /home/logan/adm
-chown :GRP_VEN /home/logan/ven
-chown :GRP_SEC /home/logan/sec
+chown :GRP_ADM /adm
+chown :GRP_VEN /ven
+chown :GRP_SEC /sec
 
 sudo groupadd GRP_ADM
 sudo groupadd GRP_VEN
@@ -23,10 +23,10 @@ sudo useradd josefina
 sudo useradd amanda
 sudo useradd rogerio
 
-chmod 777 /home/logan/publico
-chmod 770 /home/logan/adm
-chmod 770 /home/logan/ven
-chmod 770 /home/logan/sec
+chmod 777 publico
+chmod 770 adm
+chmod 770 ven
+chmod 770 sec
 
 usermod -a -G GRP_ADM joao
 usermod -a -G GRP_ADM maria
